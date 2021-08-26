@@ -52,7 +52,7 @@ static class OOmMeatSpaceObject{}
         try {
                 while (true){
                     i++;
-                    //使用Spring的动态字节码技术,不停的创建上面静态内部类（静态的属于所有类的模板和原版 ，不停向meatSpace加载）
+                    //使用String的动态字节码技术,不停的创建上面静态内部类（静态的属于所有类的模板和原版 ，不停向meatSpace加载）
                     Enhancer enhancer = new Enhancer();
                     enhancer.setSuperclass(OOmMeatSpaceObject.class);
                     enhancer.setUseCache(false);//不用缓存
